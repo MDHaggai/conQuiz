@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<title>Quiz Page</title>
+	<script>
+		// Set the timer
+		var timeLeft = 360;
+		var timerId = setInterval(countdown, 1000);
+
+		function countdown() {
+			if (timeLeft == 0) {
+				clearTimeout(timerId);
+				alert("Time's up!");
+			} else {
+				document.getElementById("timer").innerHTML = "Time remaining: " + timeLeft + " seconds";
+				timeLeft--;
+			}
+		}
+	</script>
+    <style>
+        body{
+            background-image: url("backgrounds/—Pngtree—college\ entrance\ examination\ college\ entrance_1300236.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+        }
+        form{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+	<h1>Quiz</h1>
+	<p id="timer"></p>
+	<form>
+		<h2>Question 1</h2>
+		<label>
+			<input type="radio" name="q1" value="a">
+			Answer A
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q1" value="b">
+			Answer B
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q1" value="c">
+			Answer C
+		</label>
+		<br>
+        <br>
+
+		<h2>Question 2</h2>
+		<label>
+			<input type="radio" name="q2" value="a">
+			Answer A
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q2" value="b">
+			Answer B
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q2" value="c">
+			Answer C
+		</label>
+		<br>
+        <br>
+        <label>
+			<input type="radio" name="q2" value="c">
+			Answer D
+		</label>
+		<br>
+
+		<!-- Add more questions here -->
+
+        <h2>Question 3</h2>
+		<label>
+			<input type="radio" name="q3" value="a">
+			Answer A
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q3" value="b">
+			Answer B
+		</label>
+		<br>
+        <br>
+		<label>
+			<input type="radio" name="q3" value="c">
+			Answer C
+		</label>
+		<br>
+        <br>
+
+        <label>
+			<input type="radio" name="q3" value="c">
+			Answer D
+		</label>
+		<br>
+        <br>
+
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
